@@ -3,12 +3,12 @@ import React from 'react';
 export default React.createClass({
     render: function() {
         return (
-            <div className="users-page">
-                <h1>App: Users</h1>
+            <div className="widgets-page">
+                <h1>App: Widgets</h1>
                 <ul>
-                    {this.props.users.map(function(user, i) {
+                    {this.props.widgetData.map(function(value, i) {
                         return (
-                            <li key={i}>{user.name}</li>
+                            <li key={i}>{value}</li>
                         );
                     })}
                 </ul>

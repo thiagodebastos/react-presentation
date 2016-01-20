@@ -18,8 +18,8 @@ apiServer.use(jsonServer.defaults);
 apiServer.use(router);
 
 gulp.task('serve:api', function (cb) {
-  apiServer.listen(3001);
-  cb();
+  // apiServer.listen(3000);
+  // cb();
 });
 
 // Web Server
@@ -28,4 +28,9 @@ gulp.task('serve:web', serve({
   port: 8000
 }));
 
-gulp.task('default', ['serve:api', 'serve:web', 'webpack']);
+// Watch
+gulp.task('watch', function() {
+    gulp.watch('./app/**/*', ['webpack'])
+})
+
+gulp.task('default', ['serve:api', 'serve:web', 'webpack', 'watch']);

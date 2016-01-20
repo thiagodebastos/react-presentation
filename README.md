@@ -34,14 +34,14 @@ open index.html
  - React with JSX
 
 
- Install
+Install
 
- ```sh
- cd path/to/example
- npm install
- webpack
- open index.html
- ```
+```sh
+cd path/to/example
+npm install
+webpack
+open index.html
+```
 
 #### What is JSX?
 
@@ -64,14 +64,14 @@ e.innerHtml = 'Hello World'
  - Webpack Watch (this is implemented via command line, see below)
  - Concept: Sub Components
 
- Install
+Install
 
- ```sh
- cd path/to/example
- npm install
- webpack -w
- open index.html
- ```
+```sh
+cd path/to/example
+npm install
+webpack -w
+open index.html
+```
 
 
 
@@ -106,6 +106,7 @@ gulp
 ### 6. Data without Redux
 - JSON Server (just so we have a RESTful API for demo purposes)
 - Axios (a popular XHR tool using promises)
+- Concepts: Component Containers
 
 Install
 

@@ -7,7 +7,8 @@ import App from 'layouts/app';
 
 // Components
 import Home from 'ui/home';
-import Users from 'ui/users';
+import WidgetContainer from 'ui/widget-container';
+import UsersContainer from 'ui/users-container';
 
 ReactDOM.render((
     <Router history={browserHistory}>
@@ -15,7 +16,8 @@ ReactDOM.render((
         <Route component={App}>
 
             <Route path="/" component={Home} />
-            <Route path="/users" component={Users} />
+            <Route path="/widgets" component={WidgetContainer} />
+            <Route path="/users" component={UsersContainer} />
 
         </Route>
 
