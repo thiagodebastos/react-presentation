@@ -2,7 +2,6 @@ import React from 'react';
 import Users from './users';
 import { getUsers } from 'api/user';
 
-
 export default React.createClass({
 
     getInitialState: function() {
@@ -18,7 +17,7 @@ export default React.createClass({
                 users: response.data
             })
         }).catch(function(err) {
-            console.log(err);
+            console.error(err);
         });
     },
 
