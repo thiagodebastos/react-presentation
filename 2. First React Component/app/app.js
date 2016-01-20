@@ -1,6 +1,6 @@
-import React from 'react'; // Required even if we're not using the `React` object
+import React from 'react'; // Presenter Note: Required even if we're not using the `React` object
 import ReactDOM from 'react-dom';
-import FirstComponent from 'first-component';
+import FirstComponent from './first-component';
 
 ReactDOM.render((
     <FirstComponent />
@@ -15,7 +15,7 @@ ReactDOM.render((
 
 "Similar" jQuery
 
-var e = $('<div>Hello World</div>');
-$('#root').html(e);
+var FirstComponent = $('<div>Hello World</div>');
+$('#root').html(FirstComponent);
 
 */
