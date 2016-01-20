@@ -11,8 +11,16 @@ module.exports = {
         loaders: [
             {
                 loader: 'babel',
-                exclude: /(node_modules|bower_components)/
+                test: /\.jsx?$/,
+                exclude: /(node_modules|bower_components)/,
+                query: {
+                    presets: ['react', 'es2015', 'stage-2']
+                }
             }
         ]
+    },
+    resolve: {
+        root: path.resolve('./app'),
+        extenstions: ['', '.js']
     }
 }
