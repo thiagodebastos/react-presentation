@@ -159,6 +159,6 @@ gulp
 
 # Resources
 
-https://egghead.io/lessons/react-building-a-react-js-app-up-and-running-with-react-and-webpack
-https://egghead.io/lessons/javascript-redux-store-methods-getstate-dispatch-and-subscribe
-http://redux.js.org/docs/api/
+- https://egghead.io/lessons/react-building-a-react-js-app-up-and-running-with-react-and-webpack
+- https://egghead.io/lessons/javascript-redux-store-methods-getstate-dispatch-and-subscribe
+- http://redux.js.org/docs/api/
