@@ -12,14 +12,14 @@ gulp.task('webpack', function() {
 
 // API (database) Server
 var apiServer = jsonServer.create();
-var router = jsonServer.router('db.json');
+apiServer.use(jsonServer.defaults());
 
-apiServer.use(jsonServer.defaults);
+var router = jsonServer.router('db.json');
 apiServer.use(router);
 
 gulp.task('serve:api', function (cb) {
-  // apiServer.listen(3000);
-  // cb();
+  apiServer.listen(3000);
+  cb();
 });
 
 // Web Server
