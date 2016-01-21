@@ -14,7 +14,6 @@ export default React.createClass({
        var _this = this;
         store.subscribe(function() {
             var currentStore = store.getState()
-            console.log(currentStore);
             _this.setState({
                 hasUsers: currentStore.userReducer.users.length ? true : false
             })

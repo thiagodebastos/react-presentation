@@ -9,8 +9,6 @@ ReactDOM.render((
 
 
 
-
-
 /*
 
 "Similar" jQuery

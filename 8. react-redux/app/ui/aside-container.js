@@ -12,7 +12,6 @@ const AsideContainer = React.createClass({
 });
 
 const storeSelector = function(store) {
-    console.log(store);
     return {
         hasUsers: store.userReducer.users.length ? true : false
     }

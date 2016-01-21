@@ -8,7 +8,7 @@ export default React.createClass({
                 <ul>
                     {this.props.users.map(function(user, i) {
                         return (
-                            <li key={i}>{user.name}</li>
+                            <li key={user.id}>{user.name}</li>
                         );
                     })}
                 </ul>
