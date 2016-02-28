@@ -8,7 +8,7 @@ export default React.createClass({
                 <ul>
                     {this.props.users.map((user, i) => {
                         return (
-                            <li key={i} onClick={this.props.onClick}>{user.name}</li>
+                            <li key={user.id} onClick={this.props.onClick}>{user.name}</li>
                         );
                     })}
                 </ul>
