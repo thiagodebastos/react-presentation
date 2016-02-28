@@ -1,20 +1,12 @@
 import React from 'react';
-import Aside from './aside';
 import store from 'store';
 import { connect } from 'react-redux';
+import Aside from './aside';
 
-const AsideContainer = React.createClass({
-    render: function() {
-        return (
-            <Aside hasUsers={this.props.hasUsers} />
-        )
-    }
-});
-
-const storeSelector = function(store) {
+const stateToProps = function(state) {
     return {
-        hasUsers: store.userReducer.users.length ? true : false
+        hasUsers: state.userReducer.users.length ? true : false
     }
 }
 
-export default connect(storeSelector)(AsideContainer);
+export default connect(stateToProps)(Aside);

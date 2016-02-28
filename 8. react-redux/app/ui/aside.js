@@ -4,7 +4,7 @@ export default React.createClass({
     render: function() {
         return (
             <aside>
-                Do we have users? {this.props.hasUsers ? 'Yes' : 'No'}
+                Users are in the store: {this.props.hasUsers ? 'Yes' : 'No'}
             </aside>
         )
     }

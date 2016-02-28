@@ -7,7 +7,7 @@ import userReducer from './reducers/user';
 // Combine Reducers
 var reducers = combineReducers({
     userReducer: userReducer
-    // more...
+    // more if you want...
 });
 
 // Create Store

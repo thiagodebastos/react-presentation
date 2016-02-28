@@ -6,9 +6,9 @@ export default React.createClass({
             <div className="users-page">
                 <h1>App: Users</h1>
                 <ul>
-                    {this.props.users.map(function(user, i) {
+                    {this.props.users.map((user, i) => {
                         return (
-                            <li key={i}>{user.name}</li>
+                            <li key={i} onClick={this.props.onClick}>{user.name}</li>
                         );
                     })}
                 </ul>
