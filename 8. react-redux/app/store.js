@@ -1,9 +1,6 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 
-// Add middleware to createStore
-var createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
-
 // App Reducers
 import userReducer from './reducers/user';
 
@@ -14,6 +11,9 @@ var reducers = combineReducers({
 });
 
 // Create Store
-var store = createStoreWithMiddleware(reducers);
+var store = createStore(
+    reducers,
+    applyMiddleware(thunk)
+);
 
 export default store;
